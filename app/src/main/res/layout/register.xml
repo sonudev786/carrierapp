@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:gbp="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:textSize="16sp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="12dp"
+        android:hint="Name"
+        android:id="@+id/etName"
+        android:background="@drawable/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <EditText
+        android:textSize="16sp"
+        android:paddingStart="8dp"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="12dp"
+        android:hint="Username"
+        android:id="@+id/etUsername"
+        android:background="@drawable/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <EditText
+        android:textSize="16sp"
+        android:paddingStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/etUsername"
+        android:hint="Password"
+        android:id="@+id/etPassword"
+        android:background="@drawable/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/addUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/cancel"
+            android:text="Add User"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

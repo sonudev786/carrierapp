@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "842163629090",
+    "project_id": "carrierapp-8cd52",
+    "storage_bucket": "carrierapp-8cd52.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842163629090:android:f95635ab0c0a276f792e7b",
+        "android_client_info": {
+          "package_name": "com.carrier.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkYn4ei72wDt2UTQlvcPXxrj1O8hUZyRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

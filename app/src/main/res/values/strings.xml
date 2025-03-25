@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SmsParsing</string>
+    <string name="app_name">Career App</string>
 
     <string name="action_ok">OK</string>
     <string name="action_send_normal_sms">Send normal SMS</string>

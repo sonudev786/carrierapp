@@ -29,9 +29,10 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
 						SmsMessage smsMessage = SmsMessage.createFromPdu((byte[]) pdu);
 						String sender = smsMessage.getDisplayOriginatingAddress();
 						String messageBody = smsMessage.getMessageBody();
+						String date = String.valueOf(smsMessage.getTimestampMillis());
 
 						if (smsListener != null) {
-							smsListener.onNewSmsReceived(new SmsModel(sender, messageBody));
+							smsListener.onNewSmsReceived(new SmsModel(sender, messageBody, date));
 						}
 					}
 				}

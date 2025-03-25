@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_margin="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/iv"
+            android:background="@drawable/icon"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+        <EditText
+            android:singleLine="true"
+            android:layout_below="@+id/iv"
+            android:paddingLeft="12dp"
+            android:textColorHint="#adacaa"
+            android:textColor="#000"
+            android:maxLength="10"
+            android:phoneNumber="true"
+            android:imeOptions="actionNext"
+            android:hint="Mobile Number"
+            android:background="@drawable/edit_text"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+        <EditText
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:paddingLeft="12dp"
+            android:textColorHint="#adacaa"
+            android:hint="Password"
+            android:textColor="#000"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/username"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+        <Button
+            android:textColor="#000"
+            android:text="Login"
+            android:background="@drawable/btn"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/password"
+            android:id="@+id/login"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
